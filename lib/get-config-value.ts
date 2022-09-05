@@ -17,9 +17,8 @@ try {
   throw err;
 }
 
-const siteConfig: SiteConfig = {
+const siteConfig: any = {
   ...rawSiteConfig,
-  ...siteConfigOverrides,
 };
 
 export function getSiteConfig<T>(key: string, defaultValue?: T): T {
